@@ -19,7 +19,7 @@ public class SimpleMqttClient implements MqttCallback {
 	
 	private static String postmsg = "";
 	private static final Logger log = LoggerFactory.getLogger(SimpleMqttClient.class);
-	public static final String TOPIC = "grupatras/lab/engine/potato";
+	public static final String TOPIC = "grupatras/lab/engine";
 
 	@RequestMapping(value = "/", produces = { "application/json;charset=utf-8" }, consumes = {"application/json;charset=utf-8" }, method = RequestMethod.POST)
 	public String getRespones(@RequestBody Message msg){
